@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+body {
+  color: #4f5665;
+}
+
+.btn {
+  display: inline-block;
+  transition: opacity 300ms ease-in-out;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+.btn--rounded {
+  border-radius: 30px;
+}
+
+.btn--squared {
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 75rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 33.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .nav .menu {
+    display: none;
+  }
+}
+.nav .menu-item {
+  padding: 0.5rem 1rem;
+}
+.nav .menu-item a {
+  transition: all 0.2s;
+  color: #4f5665;
+}
+.nav .menu-item a:hover {
+  color: #f53855;
+}
+@media screen and (max-width: 767px) {
+  .nav .sign {
+    display: none;
+  }
+}
+.nav .sign a {
+  margin-left: 0.5rem;
+}
+.nav .sign-in {
+  color: #0b132a;
+}
+.nav .sign-up {
+  color: #f53855;
+}
+.nav .mobile {
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .nav .mobile {
+    display: block;
+  }
+}
+.nav .mobile-btn {
+  font-size: 2.5rem;
+}
+
+.about {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .about {
+    margin-top: 1.5rem;
+  }
+}
+.about-inner {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.about-content {
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .about-content {
+    order: 2;
+  }
+}
+.about-content h1 {
+  font-weight: 500;
+  font-size: 3.125em;
+  color: #0b132a;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+}
+.about-content h1 span {
+  font-weight: 700;
+  position: relative;
+}
+.about-content h1 span::after {
+  position: absolute;
+  content: "LaslesVPN.";
+  font-weight: inherit;
+  color: #f53855;
+  top: -10%;
+  left: 1.5%;
+  z-index: -1;
+}
+.about-content p {
+  margin-top: 1rem;
+}
+.about-content a {
+  background-color: #f53855;
+  color: #fff;
+  padding: 1.125rem 5rem;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .about-content a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1.125rem 8.75rem;
+  }
+}
+.about-content a:hover {
+  box-shadow: 0 15px 15px rgba(245, 56, 56, 0.25);
+}
+@media screen and (max-width: 767px) {
+  .about-img {
+    order: 1;
+  }
+}
+.about-img img {
+  transform: translateX(5%);
+}
+@media screen and (max-width: 767px) {
+  .about-img img {
+    transform: unset;
+  }
+}
+.about-qnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .about-qnt {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+.about-qnt:hover {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+}
+.about-qnt-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 4rem 6rem;
+  position: relative;
+  width: 33.3333%;
+}
+@media screen and (max-width: 767px) {
+  .about-qnt-item {
+    width: 100%;
+  }
+}
+.about-qnt-item:nth-child(1):after {
+  position: absolute;
+  content: " ";
+  width: 2px;
+  height: 60%;
+  top: 20%;
+  right: 0;
+  background-color: #eeeff2;
+}
+@media screen and (max-width: 767px) {
+  .about-qnt-item:nth-child(1):after {
+    top: 100%;
+    width: 100%;
+    height: 2px;
+  }
+}
+.about-qnt-item:nth-child(2):after {
+  position: absolute;
+  content: " ";
+  width: 2px;
+  height: 60%;
+  top: 20%;
+  right: 0;
+  background-color: #eeeff2;
+}
+@media screen and (max-width: 767px) {
+  .about-qnt-item:nth-child(2):after {
+    top: 100%;
+    width: 100%;
+    height: 2px;
+  }
+}
+.about-qnt-icon {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #f53855;
+  background-color: #ffecec;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.about-qnt-content h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0b132a;
+}
+.about-qnt-content span {
+  font-size: 1.25rem;
+}
+
+.features-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .features-inner {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.features-content {
+  max-width: 27rem;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 767px) {
+  .features-content {
+    margin-top: 0.5rem;
+  }
+}
+.features-content h2 {
+  font-size: 2.1875rem;
+  color: #0b132a;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .features-content h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+}
+.features-content p {
+  margin-bottom: 1.5rem;
+}
+.features-item {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 1.5rem;
+}
+.features-item span {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.features-icon {
+  font-size: 1.5rem;
+  color: #2fab73;
+}
+
+.price {
+  background-color: #f6f6f6;
+  padding-top: 3.5rem;
+}
+@media screen and (max-width: 767px) {
+  .price {
+    padding-top: 1.5rem;
+  }
+}
+.price-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.price-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .price-content {
+    text-align: unset;
+    margin-bottom: 1.5rem;
+  }
+}
+.price-content h2 {
+  color: #0b132a;
+  font-weight: 500;
+  font-size: 2.1875rem;
+}
+.price-content p {
+  max-width: 34rem;
+  margin-top: 1rem;
+}
+.price-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4rem;
+}
+@media screen and (max-width: 767px) {
+  .price-list {
+    flex-direction: column;
+  }
+}
+.price-item {
+  text-align: center;
+  padding: 3rem;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.price-item:hover {
+  border-color: #f53855;
+  cursor: pointer;
+  box-shadow: 0 15px 15px rgba(245, 56, 56, 0.1);
+}
+.price-item:hover .price-btn {
+  background-color: #f53855;
+  color: #fff;
+  box-shadow: 0 15px 15px rgba(245, 56, 56, 0.25);
+}
+.price-item img {
+  margin: 0 auto;
+}
+.price-item h6 {
+  color: #0b132a;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.price-item ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 1rem;
+  height: 15rem;
+}
+.price-item ul li {
+  margin-bottom: 0.75rem;
+}
+.price-item ul li .check-icon {
+  color: #2fab73;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+.price-item h5 {
+  font-size: 1.5rem;
+  color: #0b132a;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.price-item h5 span {
+  color: #4f5665;
+  font-weight: 400;
+}
+.price-btn {
+  color: #f53855;
+  font-weight: bold;
+  padding: 0.5rem 3.5rem;
+  border: 2px solid #f53855;
+  transition: all 0.3s;
+}
+
+.testimonial {
+  background-color: #f6f6f6;
+  padding-top: 5rem;
+  text-align: center;
+}
+.testimonial h2 {
+  color: #0b132a;
+  font-size: 2.1875rem;
+  font-weight: 500;
+  max-width: 23.75rem;
+  margin: 0.75rem auto;
+}
+.testimonial p {
+  max-width: 34rem;
+  margin: 0.5rem auto;
+}
+.testimonial .global-img {
+  margin: 3rem auto;
+}
+.testimonial .sponsor-img {
+  margin: 0 auto 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
